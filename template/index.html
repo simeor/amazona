@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazona</title>
+</head>
+<body>
+
+  <div class="grid-container">
+    <header class="header">
+      <div class="brand">
+        <button onclick="openMenu()" >&#9776;</button>
+        <a href="">Amazona</a>
+      </div>
+      <div class="header-links">
+        <a href="">Cart</a>
+        <a href="">Signin</a>
+      </div>
+    </header>
+
+    <aside class='sidebar'>
+      <h3>Shopping Categories</h3>
+      <button class="sidebar-close-button" onclick="closeMenu()">X</button>
+      <ul>
+        <li>Retro</li>
+        <li>90s</li>
+        <li>Icons</li>
+        <li>Cult Movie</li>
+      </ul>
+    </aside>
+
+
+    <main class="main">
+      <div class="content">
+        <ul class="products">
+          <li>
+            <div class="product">
+              <img src="images/t-shirt1.jpg" alt="product">
+              <div class="product-name"><a href="">Retro shirt</a></div>
+              <div class="product-brand">Nike</div>
+              <div class="product-price">£30</div>
+              <div class="product-rating">4.5 Stars (10 reviews)</div>
+            </div>
+          </li>
+
+          <li>
+            <div class="product">
+              <img src="images/t-shirt1.jpg" alt="product">
+              <div class="product-name"><a href="">Retro shirt</a></div>
+              <div class="product-brand">Nike</div>
+              <div class="product-price">£30</div>
+              <div class="product-rating">4.5 Stars (10 reviews)</div>
+            </div>
+          </li>
+
+          <li>
+            <div class="product">
+              <img src="images/t-shirt1.jpg" alt="product">
+              <div class="product-name"><a href="">Retro shirt</a></div>
+              <div class="product-brand">Nike</div>
+              <div class="product-price">£30</div>
+              <div class="product-rating">4.5 Stars (10 reviews)</div>
+            </div>
+          </li>
+
+          <li>
+            <div class="product">
+              <img src="images/t-shirt1.jpg" alt="product">
+              <div class="product-name"><a href="">Retro shirt</a></div>
+              <div class="product-brand">Nike</div>
+              <div class="product-price">£30</div>
+              <div class="product-rating">4.5 Stars (10 reviews)</div>
+            </div>
+          </li>
+
+          <li>
+            <div class="product">
+              <img src="images/t-shirt1.jpg" alt="product">
+              <div class="product-name"><a href="">Retro shirt</a></div>
+              <div class="product-brand">Nike</div>
+              <div class="product-price">£30</div>
+              <div class="product-rating">4.5 Stars (10 reviews)</div>
+            </div>
+          </li>
+
+          <li>
+            <div class="product">
+              <img src="images/t-shirt1.jpg" alt="product">
+              <div class="product-name"><a href="">Retro shirt</a></div>
+              <div class="product-brand">Nike</div>
+              <div class="product-price">£30</div>
+              <div class="product-rating">4.5 Stars (10 reviews)</div>
+            </div>
+          </li>
+      </ul>
+      </div>
+    </main>
+
+
+    <footer class="footer">
+      All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+      const sidebar = document.querySelector(".sidebar");
+      openMenu=()=>{
+      sidebar.classList.add('open');
+      }
+      closeMenu=()=>{
+      sidebar.classList.remove('open');
+      }
+  </script>
+
+</body>
+</html>
