@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import data from './data';
+import Tshirt from './components/Tshirt';
 
 function App() {
 
@@ -42,66 +44,13 @@ function App() {
     <main className="main">
       <div className="content">
         <ul className="products">
-          <li>
-            <div className="product">
-              <img src="/images/t-shirt1.jpg" alt="product"/>
-              <div className="product-name"><a href="">Retro shirt</a></div>
-              <div className="product-brand">Nike</div>
-              <div className="product-price">£30</div>
-              <div className="product-rating">4.5 Stars (10 reviews)</div>
-            </div>
-          </li>
-
-          <li>
-            <div className="product">
-              <img src="/images/t-shirt1.jpg" alt="product"/>
-              <div className="product-name"><a href="">Retro shirt</a></div>
-              <div className="product-brand">Nike</div>
-              <div className="product-price">£30</div>
-              <div className="product-rating">4.5 Stars (10 reviews)</div>
-            </div>
-          </li>
-
-          <li>
-            <div className="product">
-              <img src="/images/t-shirt1.jpg" alt="product"/>
-              <div className="product-name"><a href="">Retro shirt</a></div>
-              <div className="product-brand">Nike</div>
-              <div className="product-price">£30</div>
-              <div className="product-rating">4.5 Stars (10 reviews)</div>
-            </div>
-          </li>
-
-          <li>
-            <div className="product">
-              <img src="/images/t-shirt1.jpg" alt="product"/>
-              <div className="product-name"><a href="">Retro shirt</a></div>
-              <div className="product-brand">Nike</div>
-              <div className="product-price">£30</div>
-              <div className="product-rating">4.5 Stars (10 reviews)</div>
-            </div>
-          </li>
-
-          <li>
-            <div className="product">
-              <img src="/images/t-shirt1.jpg" alt="product"/>
-              <div className="product-name"><a href="">Retro shirt</a></div>
-              <div className="product-brand">Nike</div>
-              <div className="product-price">£30</div>
-              <div className="product-rating">4.5 Stars (10 reviews)</div>
-            </div>
-          </li>
-
-          <li>
-            <div className="product">
-              <img src="/images/t-shirt1.jpg" alt="product"/>
-              <div className="product-name"><a href="">Retro shirt</a></div>
-              <div className="product-brand">Nike</div>
-              <div className="product-price">£30</div>
-              <div className="product-rating">4.5 Stars (10 reviews)</div>
-            </div>
-          </li>
-      </ul>
+          {
+          data.products.map(product =>
+            <li>
+              <Tshirt product={product}/>
+            </li>)
+          }
+        </ul>
       </div>
     </main>
 
