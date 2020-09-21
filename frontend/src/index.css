@@ -202,6 +202,8 @@ a:hover{
   max-width: 100%;
 }
 
+
+
 @media (max-width: 750px) {
   .details{
     flex-wrap: wrap;
