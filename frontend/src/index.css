@@ -178,6 +178,41 @@ a:hover{
 }
 
 
+/*product display page */
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+}
+.details-image {
+  flex: 2 1 60rem;
+  width: 100%;
+}
+.details-image img {
+  max-width: 500px;
+}
+.details-info {
+  flex: 1 1 30rem;
+  max-width: 100%;
+}
+.details-action {
+  flex: 1 1 30rem;
+  max-width: 100%;
+}
+
+@media (max-width: 750px) {
+  .details{
+    flex-wrap: wrap;
+  }
+}
+
+
+
+
+
+
 
 
 
