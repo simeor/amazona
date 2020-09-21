@@ -8,6 +8,10 @@ body{
   margin:0;
 }
 
+body > #root > div {
+  height: 100vh;
+}
+
 a{
   text-decoration: none;
 }
@@ -18,6 +22,10 @@ ul{
 
 a:hover{
  color: #ff8000;
+}
+
+#root{
+  height: 100%;
 }
 
 .grid-container{

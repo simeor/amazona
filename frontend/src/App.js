@@ -3,6 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import data from './data';
 import Tshirt from './components/Tshirt';
+import HomeScreen from './components/HomeScreen';
+import ProductScreen from './components/ProductScreen';
+import {BrowserRouter, Route, Link} from 'react-router-dom';
 
 function App() {
 
@@ -14,14 +17,17 @@ function App() {
    document.querySelector(".sidebar").classList.remove('open');
   }
 
+
   return (
+    <BrowserRouter>
+
     <div classNameName="App">
 
   <div className="grid-container">
     <header className="header">
       <div className="brand">
         <button onClick={openMenu} >&#9776;</button>
-        <a href="">Amazona</a>
+        <Link to="/">Amazona</Link>
       </div>
       <div className="header-links">
         <a href="">Cart</a>
@@ -43,14 +49,8 @@ function App() {
 
     <main className="main">
       <div className="content">
-        <ul className="products">
-          {
-          data.products.map(product =>
-            <li>
-              <Tshirt product={product}/>
-            </li>)
-          }
-        </ul>
+        <Route exact path="/product/:id" component={ProductScreen} />
+        <Route exact path="/" component={HomeScreen} />
       </div>
     </main>
 
@@ -60,6 +60,8 @@ function App() {
     </footer>
   </div>
   </div>
+  </BrowserRouter>
+
   );
 }
 

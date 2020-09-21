@@ -1,6 +1,7 @@
 export default {
   products: [
     {
+      _id: 1,
       name: 'T-shirt',
       category:'Retro',
       image: '/images/t-shirt1.jpg',
@@ -11,6 +12,7 @@ export default {
     },
 
     {
+      _id: 2,
       name: 'T-shirt',
       category:'Retro',
       image: '/images/t-shirt2.jpg',
@@ -21,6 +23,7 @@ export default {
     },
 
     {
+      _id: 3,
       name: 'T-shirt',
       category:'Retro',
       image: '/images/t-shirt1.jpg',
@@ -31,6 +34,7 @@ export default {
     },
 
     {
+      _id: 4,
       name: 'T-shirt',
       category:'Retro',
       image: '/images/t-shirt2.jpg',
@@ -41,6 +45,7 @@ export default {
     },
 
     {
+      _id: 5,
       name: 'T-shirt',
       category:'Retro',
       image: '/images/t-shirt1.jpg',
@@ -51,6 +56,7 @@ export default {
     },
 
     {
+      _id: 6,
       name: 'T-shirt',
       category:'Retro',
       image: '/images/t-shirt2.jpg',
