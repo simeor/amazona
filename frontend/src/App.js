@@ -1,10 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import data from './data';
-import Tshirt from './components/Tshirt';
 import HomeScreen from './components/HomeScreen';
 import ProductScreen from './components/ProductScreen';
+import CartScreen from './components/CartScreen';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
 
 function App() {
@@ -51,6 +49,7 @@ function App() {
       <div className="content">
         <Route exact path="/product/:id" component={ProductScreen} />
         <Route exact path="/" component={HomeScreen} />
+        <Route exact path="/cart/:id?" component={CartScreen} />
       </div>
     </main>
 
